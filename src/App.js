@@ -4,7 +4,7 @@ import VideoList from './components/movie_list'
 import NavBar from './components/navbar'
 
 const APIKEY = '34bc13a6'
-const APIURL = 'http://www.omdbapi.com/'
+const APIURL = 'https://www.omdbapi.com/'
 
 const fetchMovies = (search = 'back to the future') => {
   return fetch(APIURL + `?s=${search}&apikey=` + APIKEY).then(res => res.json())
